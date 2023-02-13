@@ -45,8 +45,8 @@ const app = Vue.createApp({
     },
 
     methods: {
-      removeTask(list){
-        this.toDoList.splice(list, 1);
+      removeTask(index){
+        this.toDoList.splice(index, 1);
         console.log(this.toDoList);
       },
 

@@ -50,9 +50,9 @@
 		</div>
 
 		<ul class="list-group container">
-			<li v-for="list in toDoList" class="list-group-item d-flex justify-content-between align-items-center">
+			<li v-for="(list, index) in toDoList" class="list-group-item d-flex justify-content-between align-items-center">
 				<span :class="(list.done == true) ? 'done': ''">{{ list.text}}</span>
-				<i role="button" class="fa-solid fa-x" @click="removeTask(list)"></i>
+				<i role="button" class="fa-solid fa-x" @click="removeTask(index)"></i>
 			</li>
 		</ul>
 
