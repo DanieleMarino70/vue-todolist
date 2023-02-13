@@ -45,8 +45,8 @@
 
 	<div id="root">
 		<div class="input-group container mb-3 mt-5">
-  			<input type="text" class="form-control" placeholder="New Task" aria-label="New Task" aria-describedby="button-addon2">
-  			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+  			<input type="text" class="form-control" placeholder="New Task" aria-label="New Task" aria-describedby="button-addon2" v-model="newTask">
+  			<button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTask()">Add</button>
 		</div>
 
 		<ul class="list-group container">

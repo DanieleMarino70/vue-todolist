@@ -37,6 +37,7 @@ const app = Vue.createApp({
               done: false 
             },
           ],
+          newTask: ""
           
         };
 
@@ -49,7 +50,13 @@ const app = Vue.createApp({
         console.log(this.toDoList);
       },
 
-      
+      addTask(){
+        const newTask = {
+          text: this.newTask,
+          done: false
+        }
+        this.toDoList.push(newTask);
+      }
 
     },
 
